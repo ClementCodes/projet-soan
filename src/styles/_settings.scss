@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,400;1,600&display=swap");
+
+$background: rgb(242, 235, 235);
+$texte: white;
+$black: black;
+$texte: #5e97ba;
+$initial-color: rgb(220, 172, 83);
+
+* {
+  text-decoration: none;
+  box-sizing: border-box;
+  list-style-type: none;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  font-family: "Josefin Sans", sans-serif;
+}

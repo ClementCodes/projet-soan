@@ -1,0 +1,35 @@
+.recap {
+  grid-area: recap;
+  width: 200px;
+  height: 200px;
+  border: solid 1px rgb(233, 228, 228);
+  box-shadow: 0px 5px 6px rgb(203, 199, 199);
+  p {
+    display: inline;
+  }
+  span {
+    margin-left: 50px;
+  }
+  hr {
+    height: 1px;
+    background-color: rgb(131, 125, 125);
+  }
+  .bold {
+    font-size: large;
+  }
+
+  .recap-margin {
+    margin: 0 8px 0 8px;
+  }
+
+  button {
+    background-color: rgb(38, 86, 169);
+    color: rgb(255, 255, 255);
+    padding: 6px 12px 6px 12px;
+    border-radius: 30px !important;
+    font-size: 18px;
+  }
+  .grey {
+    color: darkgrey;
+  }
+}

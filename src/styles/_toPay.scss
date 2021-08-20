@@ -1,0 +1,45 @@
+.toPay {
+  margin-left: 30px;
+  grid-area: toPay;
+  border: solid 1px white;
+  width: 800px;
+  height: 160px;
+  .slice {
+    display: inline;
+
+    .ecart {
+      margin-left: 2%;
+    }
+  }
+  .line-topay {
+    width: 800px;
+    height: 1px;
+    background-color: rgb(131, 125, 125);
+  }
+
+  .tarif-right {
+    text-align: right;
+    margin: -75px 10px 190px 25px;
+  }
+
+  .all2 {
+    margin-top: -150px;
+  }
+  .line-separate {
+    width: 800px;
+    margin-bottom: 50px;
+    height: 1px;
+
+    background-color: rgb(131, 125, 125);
+  }
+
+  .eye-moove {
+    margin-top: 20px;
+  }
+  img {
+    color: cornflowerblue;
+  }
+  .green {
+    color: rgb(81, 152, 125);
+  }
+}

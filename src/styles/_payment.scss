@@ -1,0 +1,38 @@
+.payment {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: (1fr, 1fr, 1fr, 1fr, 1fr);
+  gap: 3%;
+  grid-template-areas:
+    " navbar navbar navbar navbar navbar navbar navbar navbar navbar navbar navbar navbar"
+    "toPay toPay toPay toPay toPay toPay toPay toPay toPay recap recap recap "
+    ". .  projet-2 . projet-4 . . .  . . . . "
+    "register register register register register register register register register register register register";
+
+  .navbar {
+    grid-area: navbar;
+    width: 1200px;
+    height: 90px;
+    background-color: rgb(233, 228, 228);
+    padding: 10px 70px 100px 340px;
+    border: solid 1px rgb(233, 228, 228);
+    box-shadow: 0px 5px 6px rgb(203, 199, 199);
+    p {
+      margin: 10px 200px 40px auto;
+    }
+    img {
+      width: 70px;
+      border: 1px solid rgb(249, 245, 245);
+      padding: 10px 10px 10px 10px;
+      border-radius: 50px;
+      align-items: center;
+      margin: 0px 240px 0px 149px;
+      background-color: white;
+    }
+    span {
+      font-weight: 900;
+      font-size: large;
+    }
+  }
+}
