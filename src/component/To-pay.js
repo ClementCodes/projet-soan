@@ -38,7 +38,7 @@ const ToPay = () => {
             <br />
             <div className="all">
                 <div classname="tarif-left">
-                    <p><span><input type="checkbox" name="" id="" onClick={toggle} /></span> Provision pour mission comptable et fiscale troisiéme trimestre</p>
+                    <p><span><input type="checkbox" name="" id="" onClick={toggle} /></span> Provision pour mission comptable et fiscale troisième trimestre</p>
                 </div>
                 <div className="tarif-right">
                     <p className="tarifUp" >
