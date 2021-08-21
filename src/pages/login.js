@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, {  useState } from "react";
 import { useHistory } from 'react-router-dom';
 import logo from '../img/logoetoile.svg'
 import  AuthentificationService from '../services/authentification-service';
@@ -100,8 +100,8 @@ const[actionButton ,setActionButton ] = useState(true)
         </h2>
         <br />
         <form action="" onSubmit={(e) => handleSubmit(e)} >
-          {message && <div> {message}</div>}
-          <label htmlFor="email">Adresse Email</label>
+       <p className="disconnect">{message && <div> {message}</div>}</p>   
+          <label  htmlFor="email">Adresse Email</label>
           <br />
           <input className="input" id="username" type="text"  placeholder="Adresse Email" name="username" value={form.username.value } onChange={e => handleInputChange(e)}></input>
           {form.username.error &&
@@ -111,18 +111,20 @@ const[actionButton ,setActionButton ] = useState(true)
           <label htmlFor="password">Mot de passe</label>
           <br />
           <input id="password" type="password" name="password" placeholder="Mot de passe" className="input" value={form.password.value } onChange={e => handleInputChange(e)}></input>
-         
+         <br />
+         <br />
           <div className="condition">
            
-            <input disabled={actionButton} type="checkbox" id="subscribeNews"  value="newsletter" />
-              <label htmlFor="subscribeNews">J'accepte les conditions generales d'utilisation</label>
+            <input className="checkbox-login" disabled={actionButton} type="checkbox" id="subscribeNews"  value="newsletter" />
+              <label htmlFor="subscribeNews">J'accepte les <span className="condition-blue">conditions generales d'utilisations</span> </label>
             
           </div>  {form.password.error &&
             <div className="password error">{form.password.error}</div>}
-          <br />
+          <br /><br />
           <button disabled={actionButton} htmlFor="subscribeNews" className="inscription input" type="submit" value="S'inscrire" >S'inscrire</button>
-          <br />
-          <hr />
+          <br /><br />
+          <hr /><br />
+          
           <div className="login-social ">
             <input  className='input' type="submit" value="Google" />
             <input className='input' type="submit" value="Linkedin" />
@@ -131,7 +133,7 @@ const[actionButton ,setActionButton ] = useState(true)
          
         </form>
       </div>
-      <h3>j'ai déja un compte ?</h3>
+      <h3>J'ai déja un compte ?</h3>
     </div>
   );
 };
