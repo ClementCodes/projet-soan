@@ -1,4 +1,4 @@
-export default class AuthenticationService{
+export default class AuthentificationService{
 
     static IsAuthentificated = false;
 

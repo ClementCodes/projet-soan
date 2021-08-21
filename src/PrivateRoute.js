@@ -1,12 +1,12 @@
 import React from 'react';
 import { Route, Redirect } from 'react-router-dom';
-import AuthenticationService from './services/authentification-service';
-  
-const PrivateRoute = ({ component: Component, ...rest }) => (
+import  AuthentificationService from './services/authentification-service';
+
+const PrivateRoute = ({  Component, ...rest }) => (
   <Route {...rest} render={(props) => {
-    const isAuthenticated = AuthenticationService.isAuthenticated;
-    if (!isAuthenticated) {    
-      return <Redirect to={{ pathname: '/payment' }} />
+    const isAuthentificated = AuthentificationService.isAuthentificated;
+    if (!isAuthentificated) {    
+      return <Redirect to={{ pathname: '/' }} />
     }
   
     return <Component {...props} />

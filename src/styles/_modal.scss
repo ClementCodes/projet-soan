@@ -1,0 +1,46 @@
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.wrapper {
+  height: 400px;
+  width: 400px;
+  background: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-left: 3%;
+  padding-right: 3%;
+  border-radius: 15px;
+
+  .close {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
+  span {
+    cursor: pointer;
+  }
+}
+.grey-modal {
+  color: gray;
+}
+.button-modal {
+  background-color: rgb(38, 86, 169);
+  color: rgb(255, 255, 255);
+  padding: 6px 39px 6px 39px;
+  border-radius: 30px !important;
+  font-size: 18px;
+  margin: 30px 60px 30px 80px;
+  cursor: pointer;
+}
+.x {
+  margin-top: 24px;
+  font-size: 20px;
+  color: rgb(80, 80, 222);
+}

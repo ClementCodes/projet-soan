@@ -1,6 +1,7 @@
 .payment {
   display: grid;
-  height: 100vh;
+  height: 800px;
+  width: 1250px;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: (1fr, 1fr, 1fr, 1fr, 1fr);
   gap: 3%;
@@ -12,7 +13,7 @@
 
   .navbar {
     grid-area: navbar;
-    width: 1200px;
+    width: 1280px;
     height: 90px;
     background-color: rgb(233, 228, 228);
     padding: 10px 70px 100px 340px;
